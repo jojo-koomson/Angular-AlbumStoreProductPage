@@ -11,8 +11,8 @@ export class ProductService {
 
   constructor(private _http: Http) { }
 
-  getAlbum(id:number){
-  	return this._http.get(this._albumUrl).map((response) => response.json());
-  	return obervable<Album>
+  getAlbum(id:number): obervable<Album>{
+  	return this._http.get(this._albumUrl).map((response) => <Album>response.json());
+  	return 
   }
 }
