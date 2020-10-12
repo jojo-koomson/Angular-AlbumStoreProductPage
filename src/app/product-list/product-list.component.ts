@@ -8,9 +8,7 @@ import {Product} from '../product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-	id:number;
-	artistName:string;
-	albumName:string;
+	
 
 	private products: Product[];
 
